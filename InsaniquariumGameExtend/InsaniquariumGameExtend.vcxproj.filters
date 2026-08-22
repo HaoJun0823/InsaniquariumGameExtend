@@ -1,33 +1,87 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <Filter Include="源文件">
-      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
-      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    <Filter Include="Core">
+      <UniqueIdentifier>{a1b2c3d4-e5f6-4a7b-8c9d-0e1f2a3b4c5d}</UniqueIdentifier>
     </Filter>
-    <Filter Include="头文件">
+    <Filter Include="Features">
+      <UniqueIdentifier>{b2c3d4e5-f6a7-4b8c-9d0e-1f2a3b4c5d6e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Core\头文件">
       <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
       <Extensions>h;hh;hpp;hxx;hm;inl;inc;ipp;xsd</Extensions>
     </Filter>
-    <Filter Include="资源文件">
-      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
-      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    <Filter Include="Core\源文件">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="framework.h">
-      <Filter>头文件</Filter>
+    <ClInclude Include="framework.h" />
+    <ClInclude Include="pch.h" />
+    <ClInclude Include="Core\fs_compat.h">
+      <Filter>Core\头文件</Filter>
     </ClInclude>
-    <ClInclude Include="pch.h">
-      <Filter>头文件</Filter>
+    <ClInclude Include="Core\Paths.h">
+      <Filter>Core\头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Logger.h">
+      <Filter>Core\头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\IniConfig.h">
+      <Filter>Core\头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\GameVersion.h">
+      <Filter>Core\头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Patch.h">
+      <Filter>Core\头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Trampoline.h">
+      <Filter>Core\头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\GameApi.h">
+      <Filter>Core\头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Feature.h">
+      <Filter>Core\头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\FeatureManager.h">
+      <Filter>Core\头文件</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="dllmain.cpp">
-      <Filter>源文件</Filter>
+    <ClCompile Include="dllmain.cpp" />
+    <ClCompile Include="pch.cpp" />
+    <ClCompile Include="Core\Logger.cpp">
+      <Filter>Core\源文件</Filter>
     </ClCompile>
-    <ClCompile Include="pch.cpp">
-      <Filter>源文件</Filter>
+    <ClCompile Include="Core\IniConfig.cpp">
+      <Filter>Core\源文件</Filter>
     </ClCompile>
+    <ClCompile Include="Core\GameVersion.cpp">
+      <Filter>Core\源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\Patch.cpp">
+      <Filter>Core\源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\Trampoline.cpp">
+      <Filter>Core\源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\GameApi.cpp">
+      <Filter>Core\源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\FeatureManager.cpp">
+      <Filter>Core\源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Features\SigCheckFeature.cpp">
+      <Filter>Features</Filter>
+    </ClCompile>
+    <ClCompile Include="Features\StoreAllFishFeature.cpp">
+      <Filter>Features</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="InsaniquariumGameExtend.ini" />
   </ItemGroup>
 </Project>

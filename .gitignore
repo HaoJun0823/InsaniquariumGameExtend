@@ -259,3 +259,6 @@ paket-files/
 # Python Tools for Visual Studio (PTVS)
 __pycache__/
 *.pyc
+
+# Reverse-engineering helper scripts (not part of the mod deliverable; keep locally only)
+*.py
